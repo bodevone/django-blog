@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="article-detail">
+        <div class="article">
+            <img src="{{ article.thumbnail.url }}">
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.body }}</p>
+            <p>{{ article.date }}</p>
+            <p>Create By {{ article.author.username }}</p>
+
+        </div>
+
+    </div>
+{% endblock %}
